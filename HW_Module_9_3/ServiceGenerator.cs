@@ -97,10 +97,15 @@ namespace HW_Module_9_3
 
             foreach (Phonebook item in phonebooks)
             {
-                if (item.Name == name)
+                Console.WriteLine();
+                Console.WriteLine("==============================================");
+                Console.WriteLine();
+                Console.Write("Введите имя, которое необходимо найти: ");
+                if (item.Name == (name = (Console.ReadLine()).ToString()))
                     Console.WriteLine("Имя - {0}", item.Name);
                 else
                     Console.WriteLine("Нет такого человека");
+                break;
             }
         }
     }
