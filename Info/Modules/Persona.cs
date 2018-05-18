@@ -14,7 +14,9 @@ namespace Info.Modules
 
         public override void Show()
         {
+            Console.WriteLine();
             Console.WriteLine("Имя: {0}, Номер телефона: {1}, адрес: {2}", Name, PhoneNumber, Address);
+            Console.WriteLine();
         }
     }
 }
