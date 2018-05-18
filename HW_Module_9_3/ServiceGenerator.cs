@@ -10,33 +10,33 @@ namespace HW_Module_9_3
 {
     public enum AddressInfo
     {
-        Мкр_айгерим,
-        Мкр_айгерим_1,
-        Мкр_айгерим_2,
-        Мкр_айнабулак,
-        Мкр_айнабулак_2,
-        Мкр_айнабулак_3,
-        Мкр_айнабулак_4,
-        пос_бесагаш,
-        Мкр_аксай_1А,
-        Мкр_аксай_3А,
-        Мкр_алмагуль,
-        Мкр_алтай_1,
-        Мкр_алтай_2
+        Address1,
+        Address2,
+        Address3,
+        Address4,
+        Address5,
+        Address6,
+        Address7,
+        Address8,
+        Address9,
+        Address10,
+        Address11,
+        Address12,
+        Address13
     }
 
     public enum OrganizationName
     {
-        Российский_алюминий,
-        УГМК_Металлургия,
-        ГК_ТАИФ_Энергетика,
-        Металлоинвест,
-        Группа_ГАЗ,
-        Русснефть,
-        МегаФон,
-        Эльдорадо,
-        Евросеть,
-        Объединенная_металлургическая_компания
+        Organization1,
+        Organization2,
+        Organization3,
+        Organization4,
+        Organization5,
+        Organization6,
+        Organization7,
+        Organization8,
+        Organization9,
+        Organization10
     }
 
     public class ServiceGenerator
@@ -65,7 +65,7 @@ namespace HW_Module_9_3
         {
             Organization organization = new Organization();
 
-            organization.OrganizationName = ((OrganizationName)rand.Next(1, 10)).ToString();            
+            organization.OrganizationName = ((OrganizationName)rand.Next(0, 10)).ToString();
             organization.PhoneNumber = rand.Next(7000000, 9000000);
             organization.Address = ((AddressInfo)rand.Next(0, 13)).ToString();
             organization.Fax = rand.Next(5000000, 7000000);
